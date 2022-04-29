@@ -18,14 +18,37 @@ namespace Zadanie_6
             string koniec;
             do
             {
-                Console.Write("Podaj wysokośc choinki: ");
+                Console.Write("Podaj podaj szerokość dupci Myszki :) : ");
                 if (int.TryParse(Console.ReadLine(), out int a) && a >= 1)
                 {
-
+                    for (int j = 1; j <= a; j++)
+                    {
+                        for (int i = 1; i <= a - j; i++)
+                        {
+                            Console.Write(" ");
+                        }
+                        for (int i = 1; i <= 2 * j - 1; i++)
+                        {
+                            Console.Write("*");
+                        }
+                        for (int i = 1; i <= a - j; i++)
+                        {
+                            Console.Write(" ");
+                        }
+                        Console.WriteLine();
+                    }
+                    for (int i = 1; i <= 2; i++)
+                    {
+                        for (int j = 1; j <= a - 1; j++)
+                        {
+                            Console.Write(" ");
+                        }
+                        Console.WriteLine("|");
+                    }
                 }
                 else
                 {
-
+                    Console.WriteLine("Niepoprawna wysokość!");
                 }
                 Console.WriteLine("Chcesz zakończyć program? (tak/nie)");
                 koniec = Console.ReadLine();
