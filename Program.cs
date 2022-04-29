@@ -18,7 +18,7 @@ namespace Zadanie_6
             string koniec;
             do
             {
-                Console.Write("Podaj podaj szerokość dupci Myszki :) : ");
+                Console.Write("Podaj wysokość choinki: ");
                 if (int.TryParse(Console.ReadLine(), out int a) && a >= 1)
                 {
                     for (int j = 1; j <= a; j++)
